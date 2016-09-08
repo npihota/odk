@@ -52,12 +52,16 @@ def run(*args, **argsw):
 		config.host = args[0]
 	elif 'host' in argsw:
 		config.host = argsw['host']
+	else:
+		config.host = '127.0.0.1'
 		
 	if 1 in args:
 		config.port = args[1]
 	elif 'port' in argsw:
 		config.port = argsw['port']
-	
+	else: 
+		config.port = 80
+		
 	config.init()
 		
 	run_flask(*args, **argsw)
