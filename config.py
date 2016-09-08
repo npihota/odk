@@ -21,3 +21,10 @@ path_static = path + 'static/'
 url = url
 url_static = url + 'static/'
 url_view = url + 'view/'
+
+
+if os.path.isfile(path + '.config.py'):
+	file = open(path + '.config.py', 'r')
+	code = file.read()
+	file.close()
+	exec(code)
