@@ -15,7 +15,7 @@ else:
 	url = protocol + '://' + host + ':' + str(port) + '/'
 	
 
-path = os.path.dirname(os.path.realpath(__file__)) + '/'
+path = os.path.split(__file__)[0] + '/'
 path_static = path + 'static/'
 
 url = url
