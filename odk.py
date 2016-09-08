@@ -5,7 +5,7 @@ import os.path
 import sys
 
 # Добавляем путь до текущей дериктории, для поиска модулей в ней (нужно для wsgi)
-sys.path.insert(0, os.path.dirname(os.path.realpath(__file__)))
+sys.path.insert(0, os.path.split(__file__)[0] + '/')
 
 import flask
 import config
