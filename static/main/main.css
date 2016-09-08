@@ -7,12 +7,16 @@
     width: 100%;
 }
 
-.main-info {
+.main-info2 {
     padding: 0 16px;
-    line-height: 160%;
-    font-size: 18px;
-    border-bottom: 2px solid #eee;
-    margin-bottom: 16px;
+    line-height: 64px;
+    font-size: 20px;
+    text-align: center;
+}
+.main-info1{
+    padding: 0 16px;
+    line-height: 64px;
+    font-size: 42px;
     text-align: center;
 }
 .main-info h4 {

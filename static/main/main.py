@@ -36,9 +36,19 @@ def index(body):
 			tag.div(
 				tag.div(
 					tag.div(
-						tag.span('no select').attr(Class = 'main-info-text')
-					).attr(Class = 'main-info') 
-				).attr(Class = 'col-xs-12 col-sm-12')
+						tag.b('USA')
+					).attr(Class = 'main-info1') 
+				).attr(Class = 'col-xs-12 col-sm-4') +
+				tag.div(
+					tag.div(
+						tag.span('state').attr(Class = 'main-info-text main-info-text-state')
+					).attr(Class = 'main-info1') 
+				).attr(Class = 'col-xs-12 col-sm-4') +
+				tag.div(
+					tag.div(
+						tag.span('density').attr(Class = 'main-info-text main-info-text-density')
+					).attr(Class = 'main-info2')
+				).attr(Class = 'col-xs-12 col-sm-4')
 			).attr(Class = 'row') +
 			tag.div(
 				tag.div(

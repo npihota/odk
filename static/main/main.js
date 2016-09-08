@@ -82,13 +82,17 @@
 	
 	// Info, outher map
 	var fPrintInfo = (function(data){
-		var $elem = $('.main-info-text');
-		var default_text = $elem.text();
+		var $state = $('.main-info-text-state');
+		var $density = $('.main-info-text-density');
+		var default_state = $state.html();
+		var default_density = $density.html();
 		return function(data){
 			if(data){
-				$elem.text(data.name).addClass('main-info-text-select');
+				$state.html('<b>' + data.name + '</b>').addClass('main-info-text-select');
+				$density.html(data.density + ' people / mi<sup>2</sup>').addClass('main-info-text-select');
 			}else{
-				$elem.text(default_text).removeClass('main-info-text-select');
+				$state.html(default_state).removeClass('main-info-text-select');
+				$density.html(default_density).removeClass('main-info-text-select');
 			}
 		}
 	}());
