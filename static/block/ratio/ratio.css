@@ -1,0 +1,14 @@
+.block-ratio{
+    position: relative;
+}
+.block-ratio-before{
+	display: block;
+	vertical-align: middle;
+}
+.block-ratio-content {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

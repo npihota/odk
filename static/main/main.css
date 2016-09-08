@@ -1,0 +1,34 @@
+.main-h1 {
+    font-size: 20px;
+}
+
+.main-map {
+    height: 100%;
+    width: 100%;
+}
+
+.main-info {
+    padding: 0 16px;
+    line-height: 160%;
+    font-size: 18px;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.main-info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+
+.main-map-parent {
+    width: 100%;
+    height: 100%;
+}
+
+.main-info-text {
+    color: #ccc;
+}
+.main-info-text-select{
+    color: #212121
+}

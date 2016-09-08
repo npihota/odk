@@ -1,0 +1,25 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+	<title>{{ code }} {{ name }}</title>
+	<style>
+		body{width:730px;background-color:#F1F6FE;max-width: 100%;margin:0 auto; padding:0;}
+		.content{margin:1em auto; padding: 0 1em;}
+		.error{font-size:120px;text-align: center;}
+		.text{margin-top:2em;font-size: 20px;text-align: center;}
+		.msg{font-size: 16px;text-align: center;color: #DD2C00;}
+		.url a {text-transform: lowercase;color:rgb(0, 0, 238);}
+		.url {text-align: center; color: #212121;font-size: 20px; }
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="error">{{ code }}</div>
+		<div class="text">{{ text }}</div>
+		<div class="msg"><pre>{{ message }}</pre></div>
+		<div class="url">Перейти <a href="{{ url }}">на главную</a>.</div>
+	</div>
+</body>
+</html>
