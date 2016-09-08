@@ -45,14 +45,14 @@ def page_not_found(e, message = None, text = None):
 	result = flask.render_template('error/code.html', **data)
 	return result, 404
 	
-def run():
+def run2():
 	global app
 	app.run(config.host, config.port, True)
 	
 
 # запуск сервера если запускают этот файд
 if __name__ == "__main__":
-	run()
+	run2()
 
 	
 	
