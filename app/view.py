@@ -10,6 +10,7 @@ def escape(path):
 	return path.replace('//', '/').rstrip('/')
 
 def path(path):
+	path = escape(path)
 
 	# имя файла
 	_, name = os.path.split(path)
@@ -50,7 +51,8 @@ def module(pakage, body = None):
 			return False
 			
 def load(path, body = None):
-	print(path)
+	path = escape(path)
+	
 	if body == None:
 		return
 	
@@ -62,6 +64,7 @@ def load(path, body = None):
 	
 	
 def body(module, path):
+	path = escape(path)
 	body = app.body.Body()
 	if os.path.isfile(config.path_static + path + '.css'):
 		body.css(path + '.css', -1)
